@@ -1,80 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
  <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- titre de la page -->
-     <title>HTML</title>
-     <!-- icone de l'onglet --> 
-     <link rel="shortcut icon" href="./logo-2582748_960_720.png">
+     <title>Cigale House</title>
+
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
  </head>
  <body>
     <header>
-         <nav>
-             <h1><strong>Image HTML</strong>
-             </h1>
-             <img src="./basketball-2258650_1280.jpg" height="300" alt=" image-section" />
-             <!-- L'ALT de l'image est pour l'accessibilité -->
-         </nav>
+      <nav>
+        <ul>
+          <li id="logo"><a href="#">Cigale House</a></li>
+          <li><a href="#langue">Langue</a></li>
+          <li><a href="#reserver">Réserver</a></li>
+          <li><a href="#contact">Nous contacter</a></li>
+        </ul>
+      </nav>
+      <div id="imagePrincipale">
+        <h1>Cigale House</h1>
+        <div id="premierTrait"></div>
+        <h3>Chambre d'hôtes</h3>
+      </div>
     </header>
-    <main>        
-        <section>
-            <div>
-                <h2>liens HTML</h2>
-                <a href="https://htmlcheatsheet.com" target="_blank">HTML cheat sheet</a>
-            </div>
-            <div>
-                <h3><i>&#128190;</i> Video HTML</h3>
-                <video src="./codes_-_23355 (540p).mp4" autoplay muted loop></video>
-            </div>
-        </section>
-        <section>
-            <div>
-            <h2>Les formulaires</h2>
-            <form action="">  
-                <label for="name">Nom</label>
-                <input type="text"id="name" aria-placeholder="Entrez votre nom" />
-
-                <br />
-
-                <label for="age">Entrez votre age</label>
-                <input type="number" id="age" value="18" />
-
-                <br>
-
-
-            <label for="gender">Genre</label>
-            <select id="gender">
-                <option value="Homme">Homme</option>
-                <option selected="selected" value="Femme">femme</option>
-                <option value="Autre">Autre</option>
-            </select>
-            </div>
-            <textarea
-              placeholder="Votre message..." 
-              cols="20" 
-              rows="5" 
-            ></textarea>
-
-            <br />
-
-            <input type="checkbox" name="" id="cgv">
-            <label for="cgv">Accepter les conditions générales
-            </label>
- 
-            <br>
-
-            <input type="submit" value="ceci est le bouton pour valider le formulaire"  />
-          </form>
-        </section>
-    </main>
+    <section id="presentations">
+      <div id="texteIntro">
+        <h2>Un lieu unique, pour séjour unique</h2> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti porro modi asperiores saepe, suscipit quas ad, assumenda delectus accusantium, cum harum laudantium dolorum aliquam in deserunt nisi corporis voluptatem autem. Natus delectus tempora, accusantium cum atque vero laborum quam laudantium laboriosam quos iusto necessitatibus, dolore reiciendis praesentium officiis sint dolorum cumque ipsam quae? Natus labore, sequi accusamus unde cum dolorem aspernatur in, incidunt nobis culpa repudiandae! Eius delectus libero dolorem nemo unde ullam quo, optio dignissimos fuga at rem ipsam deserunt excepturi? Quos, saepe nobis!</p>
+      </div>
+      <div id="prestations">
+        <div class="imagesPrestations">
+          <h4>Nous trouver</h4>
+          <a href="#"><img src="media/carte.JPG" alt="carte"></a>
+        </div>
+        <div class="imagesPrestations">
+          <h4>Côté chambres</h4>
+          <a href="#"><img src="media/chambre.JPG" alt="carte"></a>
+        </div>
+        <div class="imagesPrestations">
+          <h4>Côté cuisine</h4>
+          <a href="#"><img src="media/repas.JPG" alt="repas"></a>
+        </div>
+      </div>
+    </section>
+    <section id="tourisme">
+      <h2>Et tant à découvrir...</h2>
+      <ul>
+        <li id="océan"><p>L'océan Atlantique</p></li>
+        <li id="château"><p>Les châteaux du Médoc</p></li>
+        <li id="phare"><p>L'estuaire de la Gironde</p></li>
+        <li id="vignoble"><p>Le vignoble Bordelais</p></li>
+      </ul>
+    </section>
     <footer>
-        <a href="mailto:ephraimbai04@gmail.com">Contactez moi !</a>
-
-        <br>
-
-        <a href="./notice.txt"
-        dowload=Notice>télécharger la notice</a>    
+      <h2 id="contact">Contactez-nous</h2>
+      <form>
+        <input placeholder="Nom">
+        <input placeholder="email">
+        <textarea placeholder="Votre message ici..."></textarea>
+        <button>Envoyer</button>
+      </form>
+      <div id="deuxièmeTrait"></div>
+      <div id="copyrightEtIcons"></div>
+        <div id="copyright">
+          <span>© gomycode 2024</span>
+        </div>
+        <div id="Icons">
+          <a href="https://www.twitter.fr"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
